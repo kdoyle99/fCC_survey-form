@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>User Stores</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Gamer Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input type="text" id="name" required placeholder="Enter your name"></label>
+        <label for="email" id="email-label">Email <input type="email" id="email" required placeholder="Enter your email"></label>
+        <label for="number" id="number-label">Age <input type="number" id="number" min="10" max="120" placeholder="Enter your age"></label>
+        <label for="dropdown">Sex
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What is your primary gaming platform?</legend>
+        <label for="pc"><input type="radio" id="pc" name="platform" value="PC" class="inline" checked> PC</label>
+        <label for="playstation"><input type="radio" id="playstation" name="platform" value="PlayStation" class="inline"> PlayStation</label>
+        <label for="xbox"><input type="radio" id="xbox" name="platform" value="Xbox" class="inline"> Xbox</label>
+        <label for="nintendo"><input type="radio" id="nintendo" name="platform" value="Nintendo Switch" class="inline"> Nintendo Switch</label>
+      </fieldset>
+      <fieldset>
+        <legend>What type of games do you play?</legend>
+        <label for="action"><input type="checkbox" id="action" value="Action" name="game-type" class="inline"> Action</label>
+        <label for="adventure"><input type="checkbox" id="adventure" name="game-type" value="Adventure" class="inline"> Adventure</label>
+        <label for="role-playing"><input type="checkbox" id="role-playing" value="Role-Playing" name="game-type" class="inline"> Role-Playing</label>
+        <label for="simulation"><input type="checkbox" id="simulation" value="Simulation" name="game-type" class="inline"> Simulation</label>
+        <label for="strategy"><input type="checkbox" id="strategy" value="strategy" name="game-type" class="inline"> Strategy</label>
+        <label for="sports-racing"><input type="checkbox" id="sports-racing" value="Sports-Racing" name="game-type" class="inline"> Sports/Racing</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">What's your favorite game right now? <textarea id="comments" rows="1" cols="30" placeholder="Disney Dreamlight Valley"></textarea></label>
+      </fieldset>
+      <label for="submit"><input type="submit" value="Submit" id="submit"></label>
+    </form>
+  </body>
+</html>
